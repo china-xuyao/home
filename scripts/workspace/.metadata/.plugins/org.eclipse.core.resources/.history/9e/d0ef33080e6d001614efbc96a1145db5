@@ -1,0 +1,31 @@
+package test;
+
+import java.util.List;
+
+public class treeVO {
+	private String note;
+	private List<TreeVO> tree = null;
+	
+	public String getNote() {
+		return note;
+	}
+	public void setNote(String note) {
+		this.note = note;
+	}
+	public List<TreeVO> getTrees() {
+		return tree;
+	}
+	public void setTrees(List<TreeVO> trees) {
+		this.tree = trees;
+	}
+	public treeVO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public treeVO(String note, List<TreeVO> tree) {
+		super();
+		this.note = note;
+		this.tree = tree;
+	}
+	 
+}

@@ -1,0 +1,40 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TreeVO {
+	private String note;
+	private List<TreeVO> tree = new ArrayList<TreeVO>();
+	
+	public String getNote() {
+		return note;
+	}
+	public void setNote(String note) {
+		this.note = note;
+	}
+	public List<TreeVO> getTree() {
+		return tree;
+	}
+	public void setTree(List<TreeVO> trees) {
+		this.tree = trees;
+	}
+	public TreeVO() {
+		super();
+	}
+	public TreeVO(String note, List<TreeVO> tree) {
+		super();
+		this.note = note;
+		this.tree = tree;
+	}
+	public TreeVO(String note) {
+		super();
+		this.note = note;
+	}
+	 
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.note;
+	}
+}

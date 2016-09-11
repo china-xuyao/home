@@ -1,0 +1,32 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.json.JSONObject;
+
+public class asd {
+	public static void main(String[] args) {
+		String s = "a.b.c.d.b.e.f";
+		String s1= "a.c.c.c.c.c";
+		System.out.println(s);
+		TreeVO treeVO = new TreeVO();
+		String[] notes= s.split("\\.");
+		treeVO.setNote(notes[0]);
+		setNote(treeVO.getTree(), notes, 1);
+		
+		JSONObject json = new JSONObject();
+		json.put("key", treeVO);
+	}
+	
+	public static void setNote(List<TreeVO> list, String[] notes ,int currently){
+		if(notes.length==currently){
+			return;
+		}
+		TreeVO vo = new TreeVO(notes[currently]);
+		list.add(vo);
+		currently++;
+		setNote(vo.getTree(), notes , currently);
+
+	}
+}

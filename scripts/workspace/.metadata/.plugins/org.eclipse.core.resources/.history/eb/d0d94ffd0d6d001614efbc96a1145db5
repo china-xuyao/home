@@ -1,0 +1,8 @@
+package test;
+
+public class asd {
+	String s = "a.b.c.d.b.e.f";
+	public static void main(String[] args) {
+		System.out.println("asdsa");
+	}
+}

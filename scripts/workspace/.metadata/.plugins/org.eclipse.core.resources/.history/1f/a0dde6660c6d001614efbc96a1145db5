@@ -1,0 +1,8 @@
+package test;
+
+import java.util.List;
+
+public class treeVO {
+	String note;
+	List<treeVO> trees;
+}

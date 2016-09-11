@@ -1,0 +1,22 @@
+package test;
+
+import java.util.List;
+
+public class treeVO {
+	private String note;
+	private List<treeVO> tree;
+	
+	public String getNote() {
+		return note;
+	}
+	public void setNote(String note) {
+		this.note = note;
+	}
+	public List<treeVO> getTrees() {
+		return tree;
+	}
+	public void setTrees(List<treeVO> trees) {
+		this.tree = trees;
+	}
+	
+}

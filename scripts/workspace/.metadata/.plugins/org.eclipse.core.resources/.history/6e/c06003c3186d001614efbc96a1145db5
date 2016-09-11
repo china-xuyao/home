@@ -1,0 +1,25 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class asd {
+	public static void main(String[] args) {
+
+		String s = "a.b.c.d.b.e.f";
+		String s1= "a.c.c.c.c.c";
+		System.out.println(s);
+		TreeVO treeVO = new TreeVO();
+		String[] notes= s.split("\\.");
+		List<TreeVO> listVO = treeVO.getTree();
+		TreeVO vo = new TreeVO(notes[0]);
+		listVO.add(vo);
+		
+	}
+	
+	public static void setNote(List<TreeVO> list, String[] notes ,int currently){
+		TreeVO vo = new TreeVO(notes[currently]);
+		list.add(e)
+
+	}
+}

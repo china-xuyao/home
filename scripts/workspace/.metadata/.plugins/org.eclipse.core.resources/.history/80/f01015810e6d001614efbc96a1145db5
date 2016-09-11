@@ -1,0 +1,15 @@
+package test;
+
+public class asd {
+	String s = "a.b.c.d.b.e.f";
+	String s1= "a.c.c.c.c.c";
+	public static void main(String[] args) {
+		System.out.println(s);
+		TreeVO treeVO = new TreeVO();
+		s1
+	}
+	
+	public void setNote(){
+		
+	}
+}
